@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Enter Marks</title></head>
+<body>
+    <h2>Student Marks Form</h2>
+    <form action="checkResult.jsp" method="post">
+        Name: <input type="text" name="name" required><br><br>
+        Marks: <input type="number" name="marks" required><br><br>
+        <input type="submit" value="Check Result">
+    </form>
+</body>
+</html>
