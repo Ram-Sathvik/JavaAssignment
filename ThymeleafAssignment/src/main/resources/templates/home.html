@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>User Management</title>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h1>User List</h1>
+
+	<a href="/newUser">Add New User</a>
+	<br />
+	<br />
+
+	<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Actions</th>
+		</tr>
+		<tr th:each="user : ${listUsers}">
+			<td th:text="${user.id}"></td>
+			<td th:text="${user.name}"></td>
+			<td th:text="${user.email}"></td>
+			<td th:text="${user.phone}"></td>
+			<td><a th:href="@{/updateUser/{id}(id=${user.id})}">Edit</a> | <a
+				th:href="@{/deleteUser/{id}(id=${user.id})}"
+				onclick="return confirm('Are you sure?')">Delete</a></td>
+		</tr>
+	</table>
+
+</body>
+</html>
