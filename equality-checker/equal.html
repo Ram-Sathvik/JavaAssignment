@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equality & Inequality Checker</title>
+</head>
+<body>
+    <script>
+        let val1 = prompt("Enter the first value (string): ");
+        let val2 = prompt("Enter the second value (number): ");
+
+        let num2 = Number(val2);
+
+        let op1 = (val1 == num2);
+        document.write(`Using == : ${op1} → Equality ignores type<br>`);
+
+        let op2 = (val1 === num2);
+        document.write(`Using === : ${op2} → Strict equality checks type too<br>`);
+
+        let op3 = (val1 != num2);
+        document.write(`Using != : ${op3} → Values considered equal<br>`);
+
+        let op4 = (val1 !== num2);
+        document.write(`Using !== : ${op4} → Strict inequality because types differ<br>`);
+    </script>
+</body>
+</html>

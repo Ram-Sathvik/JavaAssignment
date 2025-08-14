@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+</head>
+<body>
+    <script>
+        alert("Welcome to the Quiz Game!");
+
+        let name = prompt("What is your name?");
+
+        let ready = confirm("Hello " + name + ", are you ready for the quiz?");
+        if (ready) {
+            let answer = prompt("What is 4+5?\nA: 6\nB: 9\nC: 7\nD: 8");
+            if (answer.toLowerCase() === "b" || answer === "9") {
+                alert("Correct Answer");
+            } 
+            else {
+                alert("Wrong Answer");    
+            }
+        } 
+        else {
+            alert("Thank you, come back later");
+        }
+    </script>
+</body>
+</html>
