@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Product Stocks</h1>
+    <button onclick="productInventory.getStocks()">Get stocks</button>
+    <button onclick="productInventory.addStocks(10)">Add stocks</button>
+    <button onclick="productInventory.sellStocks(3)">Sell stocks</button>
+    <div id="output"></div>
+    <script>
+        const productInventory = (function() {
+            let stocks = 0;
+
+            return {
+                getStocks: function() {
+                    document.getElementById("output").innerHTML = `<p>Stocks remaining: ${stocks}</p>`;
+                },
+                addStocks: function(quantity) {
+                    stocks += quantity;
+                    document.getElementById("output").innerHTML = `<p>Adding ${quantity} stocks</p> <p>Stocks remaining: ${stocks}</p>`;
+                },
+                sellStocks: function(quantity) {
+                    if(quantity <= stocks) {
+                        stocks -= quantity;
+                        document.getElementById("output").innerHTML = `<p>Sold ${quantity} stocks</p> <p>Stocks remaining: ${stocks}</p>`;
+                    }
+                    else {
+                        document.getElementById("output").innerHTML = `<p>Insuffucient stock</p> <p>Stocks remaining: ${stocks}</p>`;
+                    }
+                } 
+            }
+        })();
+    </script>
+</body>
+</html>
