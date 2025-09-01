@@ -44,7 +44,6 @@ const JuiceList = () => {
                     ))}
                 </tbody>
             </table>
-            <hr />
         </div>
     );
 }

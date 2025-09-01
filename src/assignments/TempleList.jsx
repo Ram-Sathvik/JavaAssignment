@@ -49,7 +49,6 @@ function TempleList() {
                     ))}
                 </tbody>
             </table>
-            <hr />
         </div>
     );
 }

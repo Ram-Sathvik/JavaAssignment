@@ -12,7 +12,6 @@ const Phone = () => {
             <p>Model: {model}</p>
             <p>Price: {price}</p>
             <button onClick={() => { setPrice(price + 10000) }}>Increase Price</button>
-            <hr />
         </div>
     );
 }

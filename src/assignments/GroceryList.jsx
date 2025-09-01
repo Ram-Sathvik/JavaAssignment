@@ -8,7 +8,6 @@ function GroceryList({items}) {
                 ))}
             </ul>
             <button onClick={() => alert("Groceries added to cart")}>Add to Cart</button>
-            <hr />
         </div>
     );
 }

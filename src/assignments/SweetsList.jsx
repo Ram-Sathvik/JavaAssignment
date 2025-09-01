@@ -29,7 +29,6 @@ function SweetsList() {
                     {sweet.name} - Price: ₹{sweet.price}
                 </p>
             ))}
-            <hr />
         </div>
     );
 }

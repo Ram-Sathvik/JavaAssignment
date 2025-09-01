@@ -25,7 +25,6 @@ class Restaurant extends Component {
                     <li><MenuItem name="Gulab Jamun" price={40} category="Breakfast" available="No" /></li>
                     <li><MenuItem name="Veg Thali" price={120} category="Combo" available="Yes" /></li>
                 </ul>
-                <hr />
             </div>
         );
     }

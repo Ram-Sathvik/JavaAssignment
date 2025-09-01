@@ -19,7 +19,6 @@ const CanteenMenu = () => {
                 <li><CanteenItem name="Poori" price={40} category="Breakfast" available="No" /></li>
                 <li><CanteenItem name="Meals" price={120} category="Lunch" available="Yes" /></li>
             </ul>
-            <hr />
         </div>
     );
 }

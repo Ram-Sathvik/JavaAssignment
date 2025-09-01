@@ -10,7 +10,6 @@ class Car extends Component {
                 <p>Model: {model}</p>
                 <p>Color: {color}</p>
                 <p>Year: {year}</p>
-                <hr />
             </div>
         );
     }

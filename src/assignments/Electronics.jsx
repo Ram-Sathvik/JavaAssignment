@@ -13,7 +13,6 @@ function Electronics() {
             <p>Price: {price}</p>
             <button onClick={() => setBrand("HP")}>Change Brand</button>
             <button onClick={() => setPrice(price + 10000)}>Increase Price</button>
-            <hr />
         </div>
     );
 }
